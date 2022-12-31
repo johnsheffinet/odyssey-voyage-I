@@ -1,0 +1,4 @@
+cors:
+      origins:
+        - http://https://johnsheffinet-studious-disco-7p6vqwpw6gcxg5w-3000.preview.app.github.dev # Allows any locally-running client to run against your Router
+        - https://studio.apollographql.com # Allows Apollo Studio to still run queries against your Router
