@@ -16,10 +16,10 @@ const resolvers = {
     overallRating: ({id}, _, {dataSources}) => {
       return dataSources.reviewsAPI.getOverallRatingForLocation(id);
     },
-    overallRating: ({id}, _, {dataSources}) => {
-      return dataSources.reviewsAPI.getOverallRatingForLocation(id);
+    reviewsForLocation: ({id}, _, {dataSources}) => {
+      return dataSources.reviewsAPI.getReviewsForLocation(id);
     },
-  },
+},
   Mutation: {
     submitReview: (_, {locationReview}, {dataSources}) => {
       const newReview = dataSources.reviewsAPI.submitReviewForLocation(locationReview);
